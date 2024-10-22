@@ -6,8 +6,6 @@
 .tournament__wrapper {
   display: flex;
   flex-direction: column;
-  background: #242347;
-  border-radius: 10px;
   gap: 30px;
 }
 .tournament__top {
@@ -15,6 +13,8 @@
   gap: 70px;
   padding: 20px;
   box-sizing: border-box;
+  background: #242347;
+  border-radius: 10px;
 }
 .tournament__text {
   max-width: 391px;
@@ -158,4 +158,21 @@
   width: 22px;
   height: 22px;
   object-fit: cover;
+}
+.tournament__leaders {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  gap: 20px;
+}
+.leaders-item {
+  width: 100%;
+  height: 348px;
+  border-radius: 10px;
+  background: #242347;
+  padding: 15px 15px 24px 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
