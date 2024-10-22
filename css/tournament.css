@@ -174,6 +174,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
   position: relative;
 }
 .leaders-item span {
@@ -183,4 +184,11 @@
   font-size: 10px;
   line-height: 12.19px;
   color: #ffffff80;
+  top: 15px;
+  left: 15px;
+}
+.leaders-item img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
 }
