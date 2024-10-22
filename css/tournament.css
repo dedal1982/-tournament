@@ -192,3 +192,19 @@
   height: 200px;
   object-fit: cover;
 }
+.leaders-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12.19px;
+  color: #fff;
+  margin-top: 6px;
+}
+.leaders-like {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 7px;
+  line-height: 8.53px;
+  color: #ffffff80;
+  margin-top: 6px;
+}
