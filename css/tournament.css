@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 .tournament {
   max-width: 927px;
   width: 100%;
@@ -8,4 +9,49 @@
   background: #242347;
   border-radius: 10px;
   gap: 30px;
+}
+.tournament__top {
+  display: flex;
+  gap: 70px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.tournament__text {
+  max-width: 391px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.tournament_button {
+  width: 103px;
+  height: 35px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.tournament__text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 36.57px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.tournament__text p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #fff;
+  margin-top: 5px;
 }
