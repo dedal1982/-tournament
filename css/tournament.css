@@ -11,7 +11,7 @@
 .tournament__top {
   display: flex;
   gap: 70px;
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   box-sizing: border-box;
   background: #242347;
   border-radius: 10px;
@@ -175,4 +175,12 @@
   display: flex;
   flex-direction: column;
   position: relative;
+}
+.leaders-item span {
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12.19px;
+  color: #ffffff80;
 }
