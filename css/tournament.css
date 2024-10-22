@@ -80,7 +80,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-self: flex-end;
+  margin-top: 10px;
 }
 .tournament__item-text span {
   font-family: "Montserrat", sans-serif;
@@ -95,4 +95,39 @@
   font-size: 30px;
   line-height: 36.57px;
   color: #fff;
+}
+.tournament__item-r {
+  width: 210px;
+  height: 58px;
+  border-radius: 10px;
+  background: #3c3463;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  gap: 5px;
+}
+.tournament__item-r span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12.19px;
+  color: #ffffff80;
+}
+.tournament__item-text-r {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+.tournament__item-r h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #fff;
+}
+.tournament__icon-r {
+  width: 30px;
+  height: 30px;
 }
