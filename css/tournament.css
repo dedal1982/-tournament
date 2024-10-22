@@ -131,3 +131,31 @@
   width: 30px;
   height: 30px;
 }
+.tournament__image {
+  width: 350.9px;
+  height: 369.18px;
+}
+.tournament__image img {
+  object-fit: cover;
+}
+.tournament__read {
+  width: 126.5px;
+  height: 40.33px;
+  border-radius: 9.17px;
+  background: #594b9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18.33px;
+  line-height: 22.35px;
+  color: #fff;
+}
+.tournament__read img {
+  width: 22px;
+  height: 22px;
+  object-fit: cover;
+}
