@@ -55,3 +55,44 @@
   color: #fff;
   margin-top: 5px;
 }
+.tournament__top-items {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 10px;
+}
+.tournament__item-l {
+  width: 167px;
+  height: 58px;
+  border-radius: 10px;
+  background: #3c3463;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  gap: 5px;
+}
+.tournament__icon-l {
+  width: 27px;
+  height: 36px;
+}
+.tournament__item-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: flex-end;
+}
+.tournament__item-text span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 8.53px;
+  color: #ffffff80;
+}
+.tournament__item-text h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36.57px;
+  color: #fff;
+}
