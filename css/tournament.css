@@ -1,0 +1,11 @@
+.tournament {
+  max-width: 927px;
+  width: 100%;
+}
+.tournament__wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #242347;
+  border-radius: 10px;
+  gap: 30px;
+}
