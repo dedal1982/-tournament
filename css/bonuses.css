@@ -18,3 +18,23 @@
   line-height: 19.5px;
   color: #fff;
 }
+.bonuses__inner {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  gap: 20px;
+  margin-top: 19px;
+}
+.bonuses__item {
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bonuses__item img {
+  width: 282px;
+  height: 154px;
+  border-radius: 10px;
+  background: red;
+}
