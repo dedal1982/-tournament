@@ -602,6 +602,9 @@ const rezult = [
   },
 ];
 
+const toggleBtn = document.getElementById("toggleButton");
+if (toggleButton) {
+}
 document.getElementById("toggleButton").addEventListener("click", function () {
   const resultWrap = document.getElementById("resultWrap");
   const resultRatio = document.querySelector(".result-ratio");
@@ -732,3 +735,20 @@ bubblesButton.addEventListener("click", () => {
     }
   });
 });
+
+//копирование рефералки в буфер
+const copyAffiliateBtn = document.querySelector(".affiliate__top-btn");
+
+if (copyAffiliateBtn) {
+  copyAffiliateBtn.addEventListener("click", () => {
+    const link = document.querySelector(".affiliate__top-link").textContent;
+    navigator.clipboard
+      .writeText(link)
+      .then(() => {
+        alert("Скопировано");
+      })
+      .catch((err) => {
+        console.error("Ошибка при копировании: ", err);
+      });
+  });
+}
