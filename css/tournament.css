@@ -311,7 +311,7 @@
   background-size: cover;
   border-radius: 10px 0 0 10px;
 }
-.regist-form {
+.regist-inner {
   width: 274px;
   border-radius: 0 10px 10px 0;
   position: relative;
@@ -320,7 +320,7 @@
   padding: 33px 30px 33px 20px;
   box-sizing: border-box;
 }
-.regist-form__close {
+.regist-inner__close {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -328,16 +328,16 @@
   right: 10px;
   background: #242347;
 }
-.regist-form__close img {
+.regist-inner__close img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.regist-form__tabs {
+.regist-inner__tabs {
   width: 100%;
   display: flex;
 }
-.regist-form__tabs-btn {
+.regist-inner__tabs-btn {
   flex-basis: 50%;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -349,16 +349,16 @@
   cursor: pointer;
   border-bottom: 1px solid #554f90;
 }
-.regist-form__tabs-btn.active {
+.regist-inner__tabs-btn.active {
   color: #fff;
   border-bottom: 3px solid #554f90;
 }
-.regist-form__page {
+.regist-inner__page {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
 }
-.regist-form__page-social {
+.regist-inner__page-social {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -389,4 +389,8 @@
   width: 99px;
   height: 1px;
   background: #554f90;
+}
+.regist-form {
+  display: flex;
+  flex-direction: column;
 }
