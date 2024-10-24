@@ -752,3 +752,19 @@ if (copyAffiliateBtn) {
       });
   });
 }
+//открытие / закрытие  формы входа
+const headerButtonForm = document.querySelector(".header__in-button");
+const formRegistr = document.querySelector(".popup-regist");
+const formRegistrClose = document.querySelector(".regist-inner__close");
+
+if (headerButtonForm) {
+  headerButtonForm.addEventListener("click", () => {
+    formRegistr.classList.add("active");
+  });
+}
+
+if (formRegistrClose) {
+  formRegistrClose.addEventListener("click", () => {
+    formRegistr.classList.remove("active");
+  });
+}

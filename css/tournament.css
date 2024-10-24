@@ -295,6 +295,11 @@
   background: #000000c4;
   z-index: 99999;
   display: flex;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.popup-regist.active {
+  visibility: visible;
 }
 .popup-regist__wrapper {
   max-width: 531px;
@@ -457,5 +462,18 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 14.63px;
+  color: #fff;
+}
+.regist-form__conditions {
+  width: 100%;
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #6f6f79;
+  text-align: center;
+}
+.regist-form__conditions a {
   color: #fff;
 }
