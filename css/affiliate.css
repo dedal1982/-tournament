@@ -80,109 +80,75 @@
   font-weight: 700;
   color: #fff;
 }
-.affiliate__level {
+.affiliate__level-wrapp {
   width: fit-content;
   display: flex;
   align-items: center;
+  margin-top: 58px;
+  margin-bottom: 38px;
 }
-.level-line {
-  max-width: 695px;
-  width: 100%;
-  height: 10px;
-  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
-  margin: 60px auto 60px 0;
+.affiliate__level {
   display: flex;
   align-items: center;
-}
-.level-line-1 {
-  display: block;
-  width: 169px;
-  height: 10px;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
   position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 125px;
 }
-.level-line-2 {
-  width: 171px;
-  height: 10px;
-  position: relative;
+.affiliate__level:last-child {
+  margin-right: 0;
 }
-.level-line-3 {
-  width: 171px;
+.affiliate__level::before {
+  position: absolute;
+  content: "";
+  width: 125px;
   height: 10px;
-  position: relative;
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
+  left: 40px;
 }
-.level-line-4 {
-  width: 171px;
-  height: 10px;
-  position: relative;
+.affiliate__level:last-child::before {
+  width: 0;
+  height: 0;
 }
-.level-line-5 {
-  width: 171px;
-  height: 10px;
-  position: relative;
+.affiliate__level::after {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -3px;
+  left: -2px;
 }
 /*---уровни---*/
-.level-1 {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
-  color: #fff;
-  position: absolute;
-  top: -15px;
-  left: -17px;
+.affiliate__level.level::after {
+  content: url(../icons/level-1.png);
 }
-.level-2 {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
-  color: #fff;
-  position: absolute;
-  top: -15px;
-  right: -55px;
+.affiliate__level.level-2::after {
+  content: url(../icons/level-2.png);
 }
-.level-3 {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
-  color: #fff;
-  position: absolute;
-  top: -15px;
-  right: -85px;
+.affiliate__level.level-next::after {
+  content: url(../icons/next.png);
 }
-.level-4 {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
-  color: #fff;
-  position: absolute;
-  top: -15px;
-  right: -115px;
+.affiliate__level.level-3::after {
+  content: url(../icons/level-3.png);
+  top: -5px;
+  left: -5px;
 }
-.level-5 {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
-  color: #fff;
-  position: absolute;
-  top: -15px;
-  right: -145px;
+.affiliate__level.level-4::after {
+  content: url(../icons/level-4.png);
+  top: -14px;
+  left: -8px;
+}
+.affiliate__level.level-5::after {
+  content: url(../icons/level-5.png);
+  top: -37px;
+  left: -47px;
 }
