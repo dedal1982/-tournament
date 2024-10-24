@@ -468,13 +468,12 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     popupDeposit.classList.remove("active");
   }
-});
-
-// Закрытие попапа при нажатии на пустое место
-document.addEventListener("click", (e) => {
-  if (!popupDeposit.contains(e.target) && e.target !== replenishBtnPopup) {
-    popupDeposit.classList.remove("active");
-  }
+  // Закрытие попапа при нажатии на пустое место
+  document.addEventListener("click", (e) => {
+    if (!popupDeposit.contains(e.target) && e.target !== replenishBtnPopup) {
+      popupDeposit.classList.remove("active");
+    }
+  });
 });
 
 //запрет изменения суммы кнопками вверх и вниз
@@ -603,58 +602,59 @@ const rezult = [
 ];
 
 const toggleBtn = document.getElementById("toggleButton");
-if (toggleButton) {
-}
-document.getElementById("toggleButton").addEventListener("click", function () {
-  const resultWrap = document.getElementById("resultWrap");
-  const resultRatio = document.querySelector(".result-ratio");
-  const resultWinning = document.querySelector(".result-winning");
-  const resultWrapColor = document.querySelector(".result-wrap");
-  const inputPurpose2 = document.getElementById("inputPurpose");
-  const gameFooter = document.querySelector(".game_footer");
 
-  // Генерация случайного индекса
-  const randomIndex = Math.floor(Math.random() * rezult.length);
+if (toggleBtn) {
+  toggleBtn.addEventListener("click", function () {
+    const resultWrap = document.getElementById("resultWrap");
+    const resultRatio = document.querySelector(".result-ratio");
+    const resultWinning = document.querySelector(".result-winning");
+    const resultWrapColor = document.querySelector(".result-wrap");
+    const inputPurpose2 = document.getElementById("inputPurpose");
+    const gameFooter = document.querySelector(".game_footer");
 
-  // Получение случайного результата
-  const randomResult = rezult[randomIndex];
+    // Генерация случайного индекса
+    const randomIndex = Math.floor(Math.random() * rezult.length);
 
-  // Обновление значений
-  resultRatio.textContent = randomResult.resultRatio;
-  resultWinning.textContent = randomResult.resultWinning;
-  if (resultRatio.textContent <= inputPurpose2.value) {
-    resultWrapColor.classList.add("result-wrap-red");
-  } else if (resultRatio.textContent >= inputPurpose2.value) {
-    resultWrapColor.classList.remove("result-wrap-red");
-    resultWrapColor.classList.add("result-wrap-green");
-  }
+    // Получение случайного результата
+    const randomResult = rezult[randomIndex];
 
-  if (resultWrap.classList.contains("visible")) {
-    resultWrap.classList.remove("visible");
-    setTimeout(() => {
+    // Обновление значений
+    resultRatio.textContent = randomResult.resultRatio;
+    resultWinning.textContent = randomResult.resultWinning;
+    if (resultRatio.textContent <= inputPurpose2.value) {
+      resultWrapColor.classList.add("result-wrap-red");
+    } else if (resultRatio.textContent >= inputPurpose2.value) {
+      resultWrapColor.classList.remove("result-wrap-red");
+      resultWrapColor.classList.add("result-wrap-green");
+    }
+
+    if (resultWrap.classList.contains("visible")) {
+      resultWrap.classList.remove("visible");
+      setTimeout(() => {
+        resultWrap.classList.add("visible");
+      }, 200);
+    } else {
       resultWrap.classList.add("visible");
-    }, 200);
-  } else {
-    resultWrap.classList.add("visible");
-  }
-  // // Создание нового div и добавление его в gameFooter
-  const newDiv = document.createElement("div");
-  newDiv.classList.add("game_footer-div");
-  const newDivRatio = document.createElement("p");
-  const newDivWinning = document.createElement("span");
-  newDivWinning.classList.add("game_footer-color");
+    }
+    // // Создание нового div и добавление его в gameFooter
+    const newDiv = document.createElement("div");
+    newDiv.classList.add("game_footer-div");
+    const newDivRatio = document.createElement("p");
+    const newDivWinning = document.createElement("span");
+    newDivWinning.classList.add("game_footer-color");
 
-  newDivRatio.textContent = resultRatio.textContent;
-  newDivWinning.textContent = resultWinning.textContent;
-  if (resultRatio.textContent <= inputPurpose2.value) {
-    newDivWinning.classList.add("game_footer-red");
-  } else {
-    newDivWinning.classList.add("game_footer-green");
-  }
-  newDiv.appendChild(newDivRatio);
-  newDiv.appendChild(newDivWinning);
-  gameFooter.prepend(newDiv);
-});
+    newDivRatio.textContent = resultRatio.textContent;
+    newDivWinning.textContent = resultWinning.textContent;
+    if (resultRatio.textContent <= inputPurpose2.value) {
+      newDivWinning.classList.add("game_footer-red");
+    } else {
+      newDivWinning.classList.add("game_footer-green");
+    }
+    newDiv.appendChild(newDivRatio);
+    newDiv.appendChild(newDivWinning);
+    gameFooter.prepend(newDiv);
+  });
+}
 
 //перемещение картинок при клике
 const slider = document.querySelector(".items");
@@ -719,22 +719,24 @@ const bubblesDotsWrap = document.querySelector(".bubbles__dots_wrap");
 const bubblesDots = document.querySelectorAll(".bubbles__dot");
 const bubblesButton = document.querySelector(".bubbles__button-submit");
 
-bubblesButton.addEventListener("click", () => {
-  bubblesDotsWrap.classList.add("active");
+if (bubblesButton) {
+  bubblesButton.addEventListener("click", () => {
+    bubblesDotsWrap.classList.add("active");
 
-  setTimeout(() => {
-    bubblesDotsWrap.classList.remove("active");
-  }, 300);
+    setTimeout(() => {
+      bubblesDotsWrap.classList.remove("active");
+    }, 300);
 
-  bubblesDots.forEach((dot, index) => {
-    if (index === 0) {
-      bubblesDotsWrap.removeChild(dot);
-      const newDot = document.createElement("div");
-      newDot.classList.add("bubbles__dot");
-      bubblesDotsWrap.append(newDot);
-    }
+    bubblesDots.forEach((dot, index) => {
+      if (index === 0) {
+        bubblesDotsWrap.removeChild(dot);
+        const newDot = document.createElement("div");
+        newDot.classList.add("bubbles__dot");
+        bubblesDotsWrap.append(newDot);
+      }
+    });
   });
-});
+}
 
 //копирование рефералки в буфер
 const copyAffiliateBtn = document.querySelector(".affiliate__top-btn");
@@ -744,9 +746,7 @@ if (copyAffiliateBtn) {
     const link = document.querySelector(".affiliate__top-link").textContent;
     navigator.clipboard
       .writeText(link)
-      .then(() => {
-        alert("Скопировано");
-      })
+      .then(() => {})
       .catch((err) => {
         console.error("Ошибка при копировании: ", err);
       });
