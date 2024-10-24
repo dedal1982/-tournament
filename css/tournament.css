@@ -302,10 +302,54 @@
   display: flex;
   margin: 121px auto auto auto;
   background: #242347;
+  border-radius: 10px;
 }
 .popup-regist__image {
   width: 257px;
   background: url(../icons/popup-regist__image-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 10px 0 0 10px;
+}
+.regist-form {
+  width: 274px;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 33px 30px 33px 20px;
+  box-sizing: border-box;
+}
+.regist-form__close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #242347;
+}
+.regist-form__close img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.regist-form__tabs {
+  width: 100%;
+  display: flex;
+}
+.regist-form__tabs-btn {
+  flex-basis: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #6f6f79;
+  text-align: center;
+  padding-bottom: 18px;
+  cursor: pointer;
+  border-bottom: 3px solid #2d2c46;
+}
+.regist-form__tabs-btn.active {
+  color: #fff;
+  border-bottom: 3px solid #554f90;
 }
