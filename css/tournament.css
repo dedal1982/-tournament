@@ -399,11 +399,12 @@
   width: 100%;
   height: 35px;
   border-radius: 5px;
+  margin-top: 8px;
 }
-.regist-form__wrapp input {
+.regist-form__input {
   width: 100%;
-  height: 100%;
-  border-radius: inherit;
+  height: 35px;
+  border-radius: 5px;
   padding: 10px;
   box-sizing: border-box;
   background: #303044;
@@ -413,25 +414,25 @@
   line-height: 14.63px;
   color: #fff;
 }
-.regist-form__wrapp input::placeholder {
+.regist-form__input::placeholder {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 14.63px;
   color: #6f6f79;
 }
-.regist-form__wrapp input:focus::-webkit-input-placeholder {
+.regist-form__input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-.regist-form__wrapp input:focus::-moz-placeholder {
+.regist-form__input:focus::-moz-placeholder {
   color: transparent;
 }
 
-.regist-form__wrapp input:focus:-moz-placeholder {
+.regist-form__input:focus:-moz-placeholder {
   color: transparent;
 }
 
-.regist-form__wrapp input:focus:-ms-input-placeholder {
+.regist-form__input:focus:-ms-input-placeholder {
   color: transparent;
 }
