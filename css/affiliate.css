@@ -152,3 +152,53 @@
   top: -37px;
   left: -47px;
 }
+/*---банеры---*/
+.affiliate__banner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.banner-item {
+  display: flex;
+  width: 282px;
+  height: 154px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    ),
+    #242347;
+}
+.banner-item-coin {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #fff;
+}
+.banner-item-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130.462%;
+  color: #fff;
+  margin-top: 10px;
+}
+.banner-item-bring-out {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130.462%;
+  color: #ffbb37;
+}
+.banner-coin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
