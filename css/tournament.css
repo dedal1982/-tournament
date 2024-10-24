@@ -347,9 +347,46 @@
   text-align: center;
   padding-bottom: 18px;
   cursor: pointer;
-  border-bottom: 3px solid #2d2c46;
+  border-bottom: 1px solid #554f90;
 }
 .regist-form__tabs-btn.active {
   color: #fff;
   border-bottom: 3px solid #554f90;
+}
+.regist-form__page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.regist-form__page-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.social-btn {
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+  background: #383779;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-or {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #6f6f79;
+  margin-top: 15px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.social-or span {
+  display: inline-block;
+  width: 99px;
+  height: 1px;
+  background: #554f90;
 }
