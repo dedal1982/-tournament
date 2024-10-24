@@ -288,3 +288,24 @@
   line-height: 18.29px;
   color: #ffffff;
 }
+/*---popup-regist---*/
+.popup-regist {
+  position: fixed;
+  inset: 0;
+  background: #000000c4;
+  z-index: 99999;
+  display: flex;
+}
+.popup-regist__wrapper {
+  max-width: 531px;
+  width: 100%;
+  display: flex;
+  margin: 121px auto auto auto;
+  background: #242347;
+}
+.popup-regist__image {
+  width: 257px;
+  background: url(../icons/popup-regist__image-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

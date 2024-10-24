@@ -3,7 +3,6 @@
   width: 927px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .affiliate__wrapper {
   height: 531px;
@@ -88,8 +87,8 @@
   width: fit-content;
   display: flex;
   align-items: center;
-  margin-top: 37px;
-  margin-bottom: 43px;
+  margin-top: 40px;
+  margin-bottom: 50px;
 }
 .affiliate__level {
   display: flex;
@@ -209,4 +208,26 @@
 .banner-coin {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+/*---проценты---*/
+.level-percentages {
+  position: absolute;
+  top: -30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130.462%;
+  color: #fff;
+}
+.level-friends {
+  position: absolute;
+  bottom: -45px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130.462%;
+  color: #9897a8;
+  text-align: center;
 }
