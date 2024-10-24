@@ -134,9 +134,12 @@
 .tournament__image {
   width: 350.9px;
   height: 369.18px;
+  position: relative;
 }
 .tournament__image img {
-  object-fit: cover;
+  position: absolute;
+  top: -76px;
+  left: -68px;
 }
 .tournament__read {
   width: 126.5px;
