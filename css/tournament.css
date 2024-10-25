@@ -506,3 +506,8 @@
   border: 1px solid #de0505;
 }
 /*******************************/
+.name-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
