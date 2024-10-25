@@ -94,8 +94,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
   position: relative;
@@ -133,8 +133,8 @@
 /*---уровни---*/
 .affiliate__level.level-1::after {
   content: url(../icons/level-1.png);
-  top: 0;
-  left: 0;
+  top: -4px;
+  left: -3px;
 }
 .affiliate__level.level-2::after {
   content: url(../icons/level-2.png);
@@ -156,8 +156,8 @@
 }
 .affiliate__level.level-next::after {
   content: url(../icons/next.png);
-  top: -17px;
-  left: -22px;
+  top: -7px;
+  left: -6px;
 }
 /*---банеры---*/
 .affiliate__banner {

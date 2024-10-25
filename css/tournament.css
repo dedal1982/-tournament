@@ -482,16 +482,3 @@
   color: #fff;
 }
 /*******************************/
-.tournament-thead {
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-.tournament-thead tr {
-  background: #242347;
-  margin-bottom: 10px;
-  height: 50px;
-}
-.tr-left-tournament {
-  width: 15%;
-  text-align: start;
-}
