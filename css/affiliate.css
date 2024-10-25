@@ -143,8 +143,8 @@
 }
 .affiliate__level.level-3::after {
   content: url(../icons/level-3.png);
-  top: -5px;
-  left: -5px;
+  top: -7px;
+  left: -8px;
 }
 .affiliate__level.level-4::after {
   content: url(../icons/level-4.png);
@@ -156,8 +156,8 @@
   top: -37px;
   left: -47px;
 }
-.affiliate__level.level-next::after {
-  content: url(../icons/next.png);
+.affiliate__level.level-next-2::after {
+  content: url(../icons/next-2.png);
   top: -7px;
   left: -6px;
 }
