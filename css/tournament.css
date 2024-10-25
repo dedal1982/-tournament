@@ -516,3 +516,8 @@
   align-items: center;
   gap: 10px;
 }
+.medal-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
