@@ -607,17 +607,20 @@
                 <span></span>
               </div>
               <form class="regist-form" action="#">
-                <input
-                  class="regist-form__input"
-                  type="email"
-                  placeholder="Введите e-mail или логин"
-                />
+                <div class="regist-form__wrapp">
+                  <input
+                    class="regist-form__input mistake"
+                    type="email"
+                    placeholder="Введите e-mail или логин"
+                  />
+                </div>
                 <div class="regist-form__wrapp">
                   <input
                     class="regist-form__input"
                     type="password"
                     placeholder="Введите пароль"
                   />
+                  <span class="login-pass-mistake">Неверный логин/пароль</span>
                 </div>
                 <a class="regist-form__change-pass" href="#">Забыли пароль?</a>
                 <button class="regist-form__submit" type="submit">Войти</button>
@@ -647,16 +650,22 @@
                 <span></span>
               </div>
               <form class="regist-form" action="#">
-                <input
-                  class="regist-form__input"
-                  type="email"
-                  placeholder="ВВедите e-mail"
-                />
-                <input
-                  class="regist-form__input"
-                  type="email"
-                  placeholder="Введите логин"
-                />
+                <div class="regist-form__wrapp">
+                  <input
+                    class="regist-form__input mistake"
+                    type="email"
+                    placeholder="ВВедите e-mail"
+                  />
+                  <div class="email-mistake">E-mail уже зарегистрирован</div>
+                </div>
+                <div class="regist-form__wrapp">
+                  <input
+                    class="regist-form__input"
+                    type="text"
+                    placeholder="Введите логин"
+                  />
+                  <div class="login-mistake">Логин занят</div>
+                </div>
                 <div class="regist-form__wrapp">
                   <input
                     class="regist-form__input"

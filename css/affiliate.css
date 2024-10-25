@@ -3,6 +3,7 @@
   width: 927px;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .affiliate__wrapper {
   height: 531px;
@@ -90,6 +91,9 @@
   margin-top: 40px;
   margin-bottom: 50px;
 }
+.affiliate__level-wrapp-5 {
+  margin-bottom: 67px;
+}
 .affiliate__level {
   display: flex;
   align-items: center;
@@ -114,10 +118,10 @@
 .affiliate__level::before {
   position: absolute;
   content: "";
-  width: 125px;
+  width: 130px;
   height: 10px;
   background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
-  left: 40px;
+  left: 33px;
 }
 .affiliate__level:last-child::before {
   width: 0;
@@ -136,28 +140,48 @@
   top: -4px;
   left: -3px;
 }
+.affiliate__level.level-1::before {
+  background: #8082ff;
+}
 .affiliate__level.level-2::after {
   content: url(../icons/level-2.png);
   top: -5px;
   left: -4px;
+}
+.affiliate__level.level-2::before {
+  background: #8082ff;
 }
 .affiliate__level.level-3::after {
   content: url(../icons/level-3.png);
   top: -7px;
   left: -8px;
 }
+.affiliate__level.level-3::before {
+  background: #8082ff;
+}
 .affiliate__level.level-4::after {
   content: url(../icons/level-4.png);
-  top: -14px;
-  left: -8px;
+  top: -17px;
+  left: -11px;
+}
+.affiliate__level.level-4::before {
+  background: #8082ff;
 }
 .affiliate__level.level-5::after {
   content: url(../icons/level-5.png);
-  top: -37px;
-  left: -47px;
+  top: -42px;
+  left: -48px;
+}
+.affiliate__level.level-5::before {
+  background: #8082ff;
 }
 .affiliate__level.level-next-2::after {
   content: url(../icons/next-2.png);
+  top: -7px;
+  left: -6px;
+}
+.affiliate__level.level-next-3::after {
+  content: url(../icons/next-3.png);
   top: -7px;
   left: -6px;
 }
@@ -232,4 +256,7 @@
   line-height: 130.462%;
   color: #9897a8;
   text-align: center;
+}
+.level-friends-5 {
+  bottom: -67px;
 }

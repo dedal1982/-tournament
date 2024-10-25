@@ -468,13 +468,13 @@ if (popupDepositClose) {
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     popupDeposit.classList.remove("active");
+    // Закрытие попапа при нажатии на пустое место
+    document.addEventListener("click", (e) => {
+      if (!popupDeposit.contains(e.target) && e.target !== replenishBtnPopup) {
+        popupDeposit.classList.remove("active");
+      }
+    });
   }
-  // Закрытие попапа при нажатии на пустое место
-  document.addEventListener("click", (e) => {
-    if (!popupDeposit.contains(e.target) && e.target !== replenishBtnPopup) {
-      popupDeposit.classList.remove("active");
-    }
-  });
 });
 
 //запрет изменения суммы кнопками вверх и вниз

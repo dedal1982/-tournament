@@ -402,12 +402,13 @@
 .regist-form {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
 }
 .regist-form__wrapp {
   width: 100%;
   height: 35px;
   border-radius: 5px;
+  position: relative;
+  margin-top: 10px;
 }
 .regist-form__input {
   width: 100%;
@@ -421,7 +422,6 @@
   font-size: 12px;
   line-height: 14.63px;
   color: #fff;
-  margin-bottom: 8px;
 }
 .regist-form__input::placeholder {
   font-family: "Montserrat", sans-serif;
@@ -451,7 +451,7 @@
   font-size: 10px;
   line-height: 14.63px;
   color: #6f6f79;
-  margin: 2px 0 0 auto;
+  margin: 5px 0 0 auto;
 }
 .regist-form__submit {
   width: 100%;
@@ -480,5 +480,24 @@
 }
 .regist-form__conditions a {
   color: #fff;
+}
+.login-pass-mistake,
+.email-mistake,
+.login-mistake {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 12px;
+  color: #de0505;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+}
+.email-mistake,
+.login-mistake {
+  bottom: -10px;
+}
+.mistake {
+  border: 1px solid #de0505;
 }
 /*******************************/
