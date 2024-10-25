@@ -510,14 +510,39 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+.name-item img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 .coin-bids {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
 }
 .medal-item {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+.win-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+}
+.win-place {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #ffffff80;
 }
