@@ -144,7 +144,7 @@
   background: #8082ff;
 }
 .affiliate__level.level-2::after {
-  content: url(../icons/level-2.png);
+  content: url(../icons/l2f.svg);
   top: -5px;
   left: -4px;
 }
@@ -181,9 +181,19 @@
   left: -7px;
 }
 .affiliate__level.level-next-3::after {
-  content: url(../icons/next-3.png);
-  top: -7px;
-  left: -6px;
+  content: url(../icons/next-3.svg);
+  top: -9px;
+  left: -7px;
+}
+.affiliate__level.level-next-4::after {
+  content: url(../icons/next-4.svg);
+  top: -9px;
+  left: -7px;
+}
+.affiliate__level.level-next-5::after {
+  content: url(../icons/next-5.svg);
+  top: -9px;
+  left: -7px;
 }
 /*---банеры---*/
 .affiliate__banner {
