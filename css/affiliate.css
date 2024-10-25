@@ -137,8 +137,8 @@
 /*---уровни---*/
 .affiliate__level.level-1::after {
   content: url(../icons/level-1.svg);
-  top: -4px;
-  left: -3px;
+  top: -7px;
+  left: -7px;
 }
 .affiliate__level.level-1-b::after {
   content: url(../icons/l1b.svg);
@@ -163,8 +163,8 @@
 }
 .affiliate__level.level-3::after {
   content: url(../icons/level-3.svg);
-  top: -7px;
-  left: -8px;
+  top: -13px;
+  left: -12px;
 }
 .affiliate__level.level-3-b::after {
   content: url(../icons/l3b.svg);
@@ -175,14 +175,14 @@
   background: #8082ff;
 }
 .affiliate__level.level-4::after {
-  content: url(../icons/level-4.png);
-  top: -17px;
-  left: -11px;
+  content: url(../icons/level-4.svg);
+  top: -27px;
+  left: -28px;
 }
 .affiliate__level.level-4-b::after {
   content: url(../icons/l4b.svg);
-  top: -17px;
-  left: -11px;
+  top: -22px;
+  left: -21px;
 }
 .affiliate__level.level-4::before {
   background: #8082ff;

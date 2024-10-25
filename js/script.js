@@ -757,6 +757,7 @@ if (copyAffiliateBtn) {
 const headerButtonForm = document.querySelector(".header__in-button");
 const formRegistr = document.querySelector(".popup-regist");
 const formRegistrClose = document.querySelector(".regist-inner__close");
+const popupRegistWrapper = document.querySelector(".popup-regist__wrapper");
 
 if (headerButtonForm) {
   headerButtonForm.addEventListener("click", () => {
