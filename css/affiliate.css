@@ -176,9 +176,9 @@
   background: #8082ff;
 }
 .affiliate__level.level-next-2::after {
-  content: url(../icons/next-2.png);
-  top: -7px;
-  left: -6px;
+  content: url(../icons/next-2.svg);
+  top: -9px;
+  left: -7px;
 }
 .affiliate__level.level-next-3::after {
   content: url(../icons/next-3.png);
