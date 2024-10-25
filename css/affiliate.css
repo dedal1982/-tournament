@@ -138,6 +138,8 @@
 }
 .affiliate__level.level-2::after {
   content: url(../icons/level-2.png);
+  top: -5px;
+  left: -4px;
 }
 .affiliate__level.level-3::after {
   content: url(../icons/level-3.png);
