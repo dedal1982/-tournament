@@ -41,8 +41,32 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
+}
+.personal-bonus__card.active {
+  pointer-events: none;
 }
 .personal-bonus__card-gif {
   width: 175px;
   height: 81px;
+}
+.personal-bonus__abs {
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.personal-bonus__abs.active {
+  display: block;
+}
+.personal-bonus__card:hover .personal-bonus__abs {
+  display: block;
+}
+.personal-bonus__new {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.personal-bonus__new.active {
+  display: block;
 }

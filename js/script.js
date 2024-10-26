@@ -785,10 +785,22 @@ animationElements.forEach((element) => {
     path: "button_flare.json",
   });
 });
-// var animation = lottie.loadAnimation({
-//   container: document.querySelector(".anime"),
-//   renderer: "svg",
-//   loop: true,
-//   autoplay: true,
-//   path: "button_flare.json",
-// });
+
+//клик + анимация бонуса
+const clickBonus = document.querySelectorAll(".personal-bonus__abs");
+const personalBonusCards = document.querySelectorAll(".personal-bonus__card");
+
+if (clickBonus) {
+  clickBonus.forEach((item) => {
+    item.addEventListener("click", function () {
+      const newElement = this.nextElementSibling;
+      if (newElement && newElement.classList.contains("personal-bonus__new")) {
+        newElement.classList.add("active");
+        item.classList.add("active");
+        personalBonusCards.forEach((elem) => {
+          elem.classList.add("active");
+        });
+      }
+    });
+  });
+}
