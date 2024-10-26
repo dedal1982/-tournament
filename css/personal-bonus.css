@@ -1,0 +1,21 @@
+.personal-bonus {
+  display: flex;
+  flex-direction: column;
+}
+.personal-bonus__top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 84px;
+}
+.personal-bonus__top h1,
+.personal-bonus__top h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: white;
+  text-transform: uppercase;
+}
+.personal-bonus__top h2 {
+}
