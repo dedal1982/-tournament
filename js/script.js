@@ -789,6 +789,7 @@ animationElements.forEach((element) => {
 //клик + анимация бонуса
 const clickBonus = document.querySelectorAll(".personal-bonus__abs");
 const personalBonusCards = document.querySelectorAll(".personal-bonus__card");
+// const newChoice = document.querySelectorAll(".personal-bonus__choice");
 
 if (clickBonus) {
   clickBonus.forEach((item) => {

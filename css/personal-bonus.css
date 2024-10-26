@@ -49,6 +49,24 @@
 .personal-bonus__card-gif {
   width: 175px;
   height: 81px;
+  position: relative;
+}
+.personal-bonus__choice {
+  width: 133px;
+  height: 38px;
+  background: #f4ead1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personal-bonus__choice.active {
+  pointer-events: none;
 }
 .personal-bonus__abs {
   display: none;
@@ -59,6 +77,9 @@
 }
 .personal-bonus__card:hover .personal-bonus__abs {
   display: block;
+}
+.personal-bonus__card:hover .personal-bonus__choice {
+  display: none;
 }
 .personal-bonus__new {
   position: absolute;
