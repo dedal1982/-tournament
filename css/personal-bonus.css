@@ -33,3 +33,14 @@
   align-items: center;
   gap: 50px;
 }
+.personal-bonus__card {
+  width: 228px;
+  height: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.personal-bonus__video {
+  width: 175px;
+  height: 81px;
+}
