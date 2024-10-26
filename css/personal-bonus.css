@@ -1,6 +1,11 @@
 .personal-bonus {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  background: url(../img/bonus-main.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 20px;
 }
 .personal-bonus__top {
   display: flex;
@@ -18,4 +23,13 @@
   text-transform: uppercase;
 }
 .personal-bonus__top h2 {
+  background: linear-gradient(96deg, #fae785 0.9%, #f09c3a 64.18%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.personal-bonus__inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
