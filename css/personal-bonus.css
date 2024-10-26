@@ -40,6 +40,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .personal-bonus__card-gif {
   width: 175px;
