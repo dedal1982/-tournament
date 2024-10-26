@@ -30,8 +30,9 @@
 }
 .personal-bonus__inner {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 50px;
+  margin-top: 50px;
 }
 .personal-bonus__card {
   width: 228px;
@@ -40,7 +41,7 @@
   align-items: center;
   justify-content: center;
 }
-.personal-bonus__video {
+.personal-bonus__card-gif {
   width: 175px;
   height: 81px;
 }

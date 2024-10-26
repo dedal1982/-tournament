@@ -770,3 +770,25 @@ if (formRegistrClose) {
     formRegistr.classList.remove("active");
   });
 }
+
+//анимация бонуса
+const animationElements = document.querySelectorAll(
+  ".personal-bonus__card-gif"
+);
+
+animationElements.forEach((element) => {
+  lottie.loadAnimation({
+    container: element,
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "button_flare.json",
+  });
+});
+// var animation = lottie.loadAnimation({
+//   container: document.querySelector(".anime"),
+//   renderer: "svg",
+//   loop: true,
+//   autoplay: true,
+//   path: "button_flare.json",
+// });
