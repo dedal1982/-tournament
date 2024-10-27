@@ -2,10 +2,16 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  margin: 0 20px;
+}
+.personal-bonus__wrapper {
+  display: flex;
+  flex-direction: column;
   background: url(../img/bonus-main.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 20px;
+  background-size: cover;
+  border-radius: 10px;
 }
 .personal-bonus__top {
   display: flex;
@@ -33,6 +39,7 @@
   justify-content: center;
   gap: 50px;
   margin-top: 50px;
+  margin-bottom: 164px;
 }
 .personal-bonus__card {
   width: 228px;
