@@ -815,6 +815,7 @@ if (clickBonus) {
 if (bonusBtnClose) {
   bonusBtnClose.addEventListener("click", () => {
     bonusPopup.classList.remove("active");
+    window.location.href = "index.html";
   });
 }
 
@@ -823,5 +824,6 @@ const bonusPopupBtnUse = document.querySelector(".bonus-popup__button");
 if (bonusPopupBtnUse) {
   bonusPopupBtnUse.addEventListener("click", () => {
     bonusPopup.classList.remove("active");
+    window.location.href = "index.html";
   });
 }
