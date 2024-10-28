@@ -44,3 +44,32 @@
   color: #fff;
   margin-top: 10px;
 }
+.successfully__item-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.successfully__btn {
+  backdrop-filter: blur(10px);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.btn-support {
+  width: 180px;
+  height: 40px;
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
+}
+.btn-main {
+  width: 153px;
+  height: 40px;
+  background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
+  backdrop-filter: blur(10px);
+}
