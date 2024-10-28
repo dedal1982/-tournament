@@ -790,6 +790,7 @@ animationElements.forEach((element) => {
 const clickBonus = document.querySelectorAll(".personal-bonus__abs");
 const personalBonusCards = document.querySelectorAll(".personal-bonus__card");
 const bonusPopup = document.querySelector(".bonus-popup");
+const bonusBtnClose = document.querySelector(".bonus-popup__close");
 
 if (clickBonus) {
   clickBonus.forEach((item) => {
@@ -808,5 +809,19 @@ if (clickBonus) {
         }, 2000);
       }
     });
+  });
+}
+
+if (bonusBtnClose) {
+  bonusBtnClose.addEventListener("click", () => {
+    bonusPopup.classList.remove("active");
+  });
+}
+
+//клик по кнопке "использовать"
+const bonusPopupBtnUse = document.querySelector(".bonus-popup__button");
+if (bonusPopupBtnUse) {
+  bonusPopupBtnUse.addEventListener("click", () => {
+    bonusPopup.classList.remove("active");
   });
 }
