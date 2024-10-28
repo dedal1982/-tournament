@@ -25,7 +25,7 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 60px;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
 }
 .personal-bonus__top h2 {
@@ -132,6 +132,7 @@
 .bonus-popup__card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 185px;
   height: 235px;
   border-radius: 10px;
@@ -163,4 +164,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.bonus-amount {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20.87px;
+  color: white;
+  margin-top: 19px;
+}
+.bonus-amount span {
+  color: #ffbb37;
 }
