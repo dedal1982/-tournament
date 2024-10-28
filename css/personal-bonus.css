@@ -105,9 +105,37 @@
   background: #000000c4;
   z-index: 99999;
   display: flex;
-  visibility: hidden;
+  /* visibility: hidden; */
   transition: all 0.2s ease-in-out;
 }
 .bonus-popup.active {
   visibility: visible;
+}
+.bonus-popup__inner {
+  max-width: 531px;
+  width: 100%;
+  height: 411px;
+  display: flex;
+  flex-direction: column;
+  margin: 144px auto auto auto;
+  background: #242347;
+  border-radius: 10px;
+  background: url(../img/bonus-popup.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bonus-popup__image-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bonus-popup__close {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }

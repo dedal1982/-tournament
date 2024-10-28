@@ -791,21 +791,6 @@ const clickBonus = document.querySelectorAll(".personal-bonus__abs");
 const personalBonusCards = document.querySelectorAll(".personal-bonus__card");
 const bonusPopup = document.querySelector(".bonus-popup");
 
-// if (clickBonus) {
-//   clickBonus.forEach((item) => {
-//     item.addEventListener("click", function () {
-//       const newElement = this.nextElementSibling;
-//       if (newElement && newElement.classList.contains("personal-bonus__new")) {
-//         newElement.classList.add("active");
-//         item.classList.add("active");
-//         personalBonusCards.forEach((elem) => {
-//           elem.classList.add("active");
-
-//         });
-//       }
-//     });
-//   });
-// }
 if (clickBonus) {
   clickBonus.forEach((item) => {
     item.addEventListener("click", function () {
@@ -818,10 +803,9 @@ if (clickBonus) {
           elem.classList.add("active");
         });
 
-        // Установите таймер на 2 секунды для добавления класса 'active'
         setTimeout(() => {
           bonusPopup.classList.add("active");
-        }, 2000); // 2000 мс = 2 секунды
+        }, 2000);
       }
     });
   });
