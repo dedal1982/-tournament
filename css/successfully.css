@@ -29,10 +29,18 @@
 }
 .successfully__title {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19.5px;
   color: #fff;
   margin-top: 10px;
   text-transform: uppercase;
+}
+.successfully__subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #fff;
+  margin-top: 10px;
 }
