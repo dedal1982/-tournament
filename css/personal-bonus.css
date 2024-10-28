@@ -98,3 +98,16 @@
 .personal-bonus__new.active {
   display: block;
 }
+/*---bonus popup---*/
+.bonus-popup {
+  position: fixed;
+  inset: 0;
+  background: #000000c4;
+  z-index: 99999;
+  display: flex;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+.bonus-popup.active {
+  visibility: visible;
+}
