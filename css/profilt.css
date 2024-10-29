@@ -144,11 +144,3 @@ input:focus::placeholder {
   height: 15px;
   object-fit: cover;
 }
-.button-date {
-  width: 11px;
-  height: 11px;
-  position: absolute;
-  top: 17px;
-  right: 10px;
-  cursor: pointer;
-}
