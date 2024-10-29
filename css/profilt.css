@@ -144,3 +144,20 @@ input:focus::placeholder {
   height: 15px;
   object-fit: cover;
 }
+.button-confirm {
+  width: 97px;
+  height: 25px;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #fff;
+}
