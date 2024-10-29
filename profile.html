@@ -196,6 +196,7 @@
                       />
                     </div>
                     <div class="profile-main__top-form">
+                      <!--TABS-->
                       <div class="profile-main__tabs">
                         <button class="profile-main__tab active" type="button">
                           Общее
@@ -204,6 +205,48 @@
                           Безопасность
                         </button>
                       </div>
+                      <!--FORM GENERAL-->
+                      <form
+                        class="profile-main__form-general"
+                        action=""
+                        method="get"
+                      >
+                        <!--item-->
+                        <div class="profile-main__form-item">
+                          <label for="name">Логин</label>
+                          <div class="profile-main__input-wrapp">
+                            <input
+                              type="text"
+                              name="name"
+                              id="name"
+                              required
+                              placeholder="Алёша Попович"
+                            />
+                            <button class="button-pen" type="button">
+                              <img src="./icons/input-pen.svg" alt="pen" />
+                            </button>
+                          </div>
+                        </div>
+                        <!--item-->
+                        <div class="profile-main__form-item">
+                          <label for="name">Дата рождения</label>
+                          <div class="profile-main__input-wrapp">
+                            <input
+                              type="date"
+                              name="name"
+                              id="name"
+                              required
+                              placeholder="Алёша Попович"
+                            />
+
+                            <img
+                              class="button-date"
+                              src="./icons/input-date.svg"
+                              alt="pen"
+                            />
+                          </div>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
