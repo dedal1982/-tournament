@@ -1,18 +1,47 @@
 .profile {
+  max-width: 927px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .profile-main {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #242347;
   border-radius: 10px;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 .profile-main__top {
   display: flex;
   gap: 20px;
 }
+.profile-main__avatar {
+  width: 294px;
+  height: 373px;
+  position: relative;
+  display: flex;
+}
+.profile-main__avatar-down {
+  width: 294px;
+  position: absolute;
+  bottom: 0;
+}
+.profile-main__avatar-logo {
+  width: 202px;
+  height: 34px;
+  position: absolute;
+  top: 19px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/*--- profile-main__top-form ---*/
+.profile-main__top-form {
+  width: 585px;
+  display: flex;
+  flex-direction: column;
+}
+/******************/
