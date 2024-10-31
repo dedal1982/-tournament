@@ -173,9 +173,9 @@ input:focus::placeholder {
   color: #fff;
 }
 .profile-sex-select span {
+  margin-top: 3px;
 }
 .profile-sex-select span.active {
-  transform: rotate(50deg);
   color: #ffffff0d;
 }
 .profile-sex-list {
@@ -183,15 +183,30 @@ input:focus::placeholder {
   height: 92px;
   border-radius: 10px;
   background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 5px;
   padding: 17px 15px;
   position: absolute;
+  visibility: hidden;
+  transition: all.2s ease-in-out;
+  top: 35px;
 }
 .profile-sex-list.active {
-  display: flex;
+  visibility: visible;
 }
+.profile-sex-list::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 6.495px solid transparent;
+  border-right: 6.495px solid transparent;
+  border-bottom: 9px solid #34326b;
+  top: -7px;
+  left: 30px;
+}
+
 .profile-sex-list li {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -203,4 +218,11 @@ input:focus::placeholder {
 .profile-sex-list li:hover,
 .profile-sex-list li.active {
   color: #fff;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 6.495px solid transparent;
+  border-right: 6.495px solid transparent;
+  border-bottom: 9px solid black;
 }
