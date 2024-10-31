@@ -837,6 +837,7 @@ const profileSexListSelect = document.querySelectorAll(".profile-sex-list li");
 if (profileSexSelect) {
   profileSexSelect.addEventListener("click", () => {
     profileSexList.classList.toggle("active");
+    profileSexSpan.classList.toggle("active");
   });
 }
 

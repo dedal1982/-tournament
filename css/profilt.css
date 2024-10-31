@@ -165,7 +165,7 @@ input:focus::placeholder {
 .profile-sex-select {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   color: #9897a8;
   cursor: pointer;
 }
@@ -173,10 +173,14 @@ input:focus::placeholder {
   color: #fff;
 }
 .profile-sex-select span {
-  margin-top: 3px;
+  background: url(../icons/prof-arrow.svg);
+  width: 8.75px;
+  height: 5px;
 }
 .profile-sex-select span.active {
-  color: #ffffff0d;
+  background: url(../icons/prof-arrow-activ.svg);
+  width: 8.75px;
+  height: 5px;
 }
 .profile-sex-list {
   width: 132px;
@@ -189,8 +193,8 @@ input:focus::placeholder {
   padding: 17px 15px;
   position: absolute;
   visibility: hidden;
-  transition: all.2s ease-in-out;
   top: 35px;
+  z-index: 2;
 }
 .profile-sex-list.active {
   visibility: visible;
