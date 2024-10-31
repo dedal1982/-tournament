@@ -827,3 +827,29 @@ if (bonusPopupBtnUse) {
     window.location.href = "index.html";
   });
 }
+
+//выбор пола
+const profileSexSelect = document.querySelector(".profile-sex-select");
+const profileSexList = document.querySelector(".profile-sex-list");
+const profileSexSpan = document.querySelector(".profile-sex-select span");
+const profileSexListSelect = document.querySelectorAll(".profile-sex-list li");
+
+if (profileSexSelect) {
+  profileSexSelect.addEventListener("click", () => {
+    profileSexList.classList.toggle("active");
+  });
+}
+
+if (profileSexListSelect) {
+  profileSexListSelect.forEach((item) => {
+    item.addEventListener("click", () => {
+      profileSexListSelect.forEach((elem) => {
+        elem.classList.remove("active");
+      });
+      profileSexSelect.textContent = item.textContent;
+      item.classList.add("active");
+      profileSexList.classList.remove("active");
+      profileSexSelect.classList.add("active");
+    });
+  });
+}
