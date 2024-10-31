@@ -11,8 +11,7 @@
   align-items: center;
   background: #242347;
   border-radius: 10px;
-  padding-top: 8px;
-  padding-bottom: 20px;
+  padding: 8px 20px 20px 20px;
   box-sizing: border-box;
 }
 .profile-main__top {
@@ -240,6 +239,24 @@ input:focus::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #fff;
+}
+.profile-main__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.profile-main__social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.profile-main__social span {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
