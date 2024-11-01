@@ -248,6 +248,7 @@ input:focus::placeholder {
 .profile-main__bottom {
   width: 100%;
   display: flex;
+  align-items: end;
   justify-content: space-between;
   margin-top: 25px;
 }
@@ -290,4 +291,19 @@ input:focus::placeholder {
 }
 .social-btn-google {
   background: #c7493e;
+}
+.profile-main__exit {
+  display: flex;
+  gap: 3px;
+  background: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #9897a8;
+}
+.profile-main__exit img {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
 }
