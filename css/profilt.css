@@ -140,11 +140,12 @@ input:focus::placeholder {
   right: 10px;
 }
 .button-pen img {
-  width: 15px;
-  height: 15px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .button-confirm {
+  position: relative;
   width: 97px;
   height: 25px;
   border-radius: 5px;
@@ -160,6 +161,20 @@ input:focus::placeholder {
   font-size: 12px;
   line-height: 14.63px;
   color: #fff;
+}
+.button-confirm::after {
+  content: "Подтвердить";
+}
+.button-confirmed {
+  width: 28px;
+  height: 25px;
+  background: url(../icons/button-confirmed.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: not-allowed;
+}
+.button-confirmed::after {
+  content: "";
 }
 .profile-sex-select {
   display: flex;
