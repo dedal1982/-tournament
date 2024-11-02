@@ -125,6 +125,25 @@
   background: url(../icons/eye-closed.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  cursor: pointer;
+}
+.eye-pass.active {
+  background: url(../icons/eye.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.password-error {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9.75px;
+  color: #de0505cc;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+}
+.password-error a {
+  color: #9897a8;
 }
 .form-pass {
   margin-top: 10px !important;

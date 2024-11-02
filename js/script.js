@@ -195,6 +195,7 @@ makeCodeUniversal(".history-btn", ".history-text-wrapper");
 makeCodeUniversal(".withdraw", ".withdraw-up");
 makeCodeUniversal(".mob-nested", ".withdraw-up");
 makeCodeUniversal(".regist-inner__tabs-btn", ".regist-inner__page");
+makeCodeUniversal(".profile-main__tab", ".profile-main__form-general");
 
 //-------------------------------------------------
 const bankItems = document.querySelectorAll(".bank-item");
