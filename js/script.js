@@ -855,3 +855,34 @@ if (profileSexListSelect) {
     });
   });
 }
+
+//открытие / закрытие попапа выход
+const popupExitPage = document.querySelector(".popup-exit");
+const popupExitBtn = document.querySelector(".popup-exit__close");
+const profileMmainExit = document.querySelector(".profile-main__exit");
+const btnStay = document.querySelector(".btn-stay");
+const btnExit = document.querySelector(".btn-exit");
+
+if (profileMmainExit) {
+  profileMmainExit.addEventListener("click", () => {
+    popupExitPage.classList.add("active");
+  });
+}
+
+if (popupExitBtn) {
+  popupExitBtn.addEventListener("click", () => {
+    popupExitPage.classList.remove("active");
+  });
+}
+
+if (btnStay) {
+  btnStay.addEventListener("click", () => {
+    popupExitPage.classList.remove("active");
+  });
+}
+
+if (btnExit) {
+  btnExit.addEventListener("click", () => {
+    alert("тут выход...");
+  });
+}
