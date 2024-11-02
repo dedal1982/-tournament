@@ -207,9 +207,9 @@
                       </div>
                       <!--FORM GENERAL-->
                       <form
-                        class="profile-main__form-general active"
+                        class="profile-main__form-general"
                         action=""
-                        method="get"
+                        method=""
                       >
                         <div class="profile-main__form-inner">
                           <!--item-->
@@ -305,6 +305,54 @@
                           >
                             Сохранить
                           </button>
+                        </div>
+                      </form>
+                      <!--FORM SAFETY-->
+                      <form
+                        class="profile-main__form-general active"
+                        action=""
+                        method=""
+                      >
+                        <div class="profile-main__form-inner">
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Старый пароль</label>
+                            <div class="profile-main__input-wrapp">
+                              <input type="password" />
+                            </div>
+                          </div>
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Новый пароль</label>
+                            <div class="profile-main__input-wrapp">
+                              <input type="password" />
+                            </div>
+                          </div>
+                          <!--item-->
+                          <button
+                            class="profile-main__form-submit"
+                            type="submit"
+                          >
+                            Сохранить
+                          </button>
+                        </div>
+                        <div class="profile-main__form-inner">
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Двухфакторная авторизация</label>
+                            <div class="profile-main__input-wrapp">
+                              <input
+                                type="email"
+                                placeholder="2FA"
+                                readonly="readonly"
+                              />
+                              <button
+                                class="button-confirm button-authorization button-confirmed"
+                                type="button"
+                              ></button>
+                              <span class="profile-email-error">Отключена</span>
+                            </div>
+                          </div>
                         </div>
                       </form>
                     </div>
