@@ -144,6 +144,7 @@ input:focus::placeholder {
   height: 100%;
   object-fit: cover;
 }
+/*для изменения кнопки ""ПОДТВЕРДИТЬ* на иконку "ПОДТВЕРЖДЕНО" добавляем кнопке .button-confirm класс .button-confirmed*/
 .button-confirm {
   position: relative;
   width: 97px;
