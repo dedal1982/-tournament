@@ -111,6 +111,24 @@
   flex-direction: column;
   gap: 5px;
 }
+.form-item-error {
+  border: 1px solid #de0505cc;
+  border-radius: 10px;
+}
+.eye-pass {
+  display: block;
+  width: 13px;
+  height: 10px;
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  background: url(../icons/eye-closed.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.form-pass {
+  margin-top: 10px !important;
+}
 .profile-main__form-item input,
 .profile-sex-select {
   width: 100%;
@@ -250,6 +268,8 @@ input:focus::placeholder {
   font-size: 12px;
   line-height: 14.63px;
   color: #9897a8;
+  display: flex;
+  align-items: center;
 }
 .profile-sex-list li {
   font-family: "Montserrat", sans-serif;
