@@ -207,91 +207,105 @@
                       </div>
                       <!--FORM GENERAL-->
                       <form
-                        class="profile-main__form-general"
+                        class="profile-main__form-general active"
                         action=""
                         method="get"
                       >
-                        <!--item-->
-                        <div class="profile-main__form-item">
-                          <label for="name">Логин</label>
-                          <div class="profile-main__input-wrapp">
-                            <input
-                              type="text"
-                              required
-                              placeholder="Алёша Попович"
-                            />
-                            <button class="button-pen" type="button">
-                              <img src="./icons/input-pen.svg" alt="pen" />
-                            </button>
-                          </div>
-                        </div>
-                        <!--item-->
-                        <div class="profile-main__form-item">
-                          <label for="name">Дата рождения</label>
-                          <div class="profile-main__input-wrapp">
-                            <input type="date" required />
-                          </div>
-                        </div>
-                        <!--item-->
-                        <div class="profile-main__form-item">
-                          <label for="name">E-mail</label>
-                          <div class="profile-main__input-wrapp">
-                            <input type="email" required placeholder="E-mail" />
-                            <button
-                              class="button-confirm button-confirmed"
-                              type="button"
-                            ></button>
-                            <span class="profile-email-error"
-                              >Не подтвержден</span
-                            >
-                          </div>
-                        </div>
-                        <!--item-->
-                        <div class="profile-main__form-item">
-                          <label for="name">Пол</label>
-                          <div class="profile-main__input-wrapp">
-                            <div id="sex-select" class="profile-sex-select">
-                              Ваш пол <span></span>
+                        <div class="profile-main__form-inner">
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Логин</label>
+                            <div class="profile-main__input-wrapp">
+                              <input
+                                type="text"
+                                required
+                                placeholder="Алёша Попович"
+                              />
+                              <button class="button-pen" type="button">
+                                <img src="./icons/input-pen.svg" alt="pen" />
+                              </button>
                             </div>
-                            <ul class="profile-sex-list">
-                              <li class="active">Мужской</li>
-                              <li>Женский</li>
-                              <li>Другой</li>
-                            </ul>
                           </div>
-                        </div>
-                        <!--item-->
-                        <div class="profile-main__form-item">
-                          <label for="name">Имя</label>
-                          <div class="profile-main__input-wrapp">
-                            <input type="text" required />
-                          </div>
-                        </div>
-                        <!--item-->
-                        <div class="profile-main__form-item">
-                          <label for="name">Страна</label>
-                          <div class="profile-main__input-wrapp">
-                            <div id="country-select" class="profile-sex-select">
-                              Ваша страна<span></span>
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">E-mail</label>
+                            <div class="profile-main__input-wrapp">
+                              <input
+                                type="email"
+                                required
+                                placeholder="E-mail"
+                              />
+                              <button
+                                class="button-confirm button-confirmed"
+                                type="button"
+                              ></button>
+                              <span class="profile-email-error"
+                                >Не подтвержден</span
+                              >
                             </div>
-                            <ul class="profile-sex-list country-select-list">
-                              <li class="active">Мужской</li>
-                              <li>Женский</li>
-                              <li>Другой</li>
-                            </ul>
+                          </div>
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Имя</label>
+                            <div class="profile-main__input-wrapp">
+                              <input type="text" required />
+                            </div>
+                          </div>
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Фамилия</label>
+                            <div class="profile-main__input-wrapp">
+                              <input type="text" required />
+                            </div>
                           </div>
                         </div>
-                        <!--item-->
-                        <div class="profile-main__form-item">
-                          <label for="name">Фамилия</label>
-                          <div class="profile-main__input-wrapp">
-                            <input type="text" required />
+                        <div class="profile-main__form-inner">
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Дата рождения</label>
+                            <div class="profile-main__input-wrapp">
+                              <input type="date" required />
+                            </div>
                           </div>
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Пол</label>
+                            <div class="profile-main__input-wrapp">
+                              <div id="sex-select" class="profile-sex-select">
+                                Ваш пол <span></span>
+                              </div>
+                              <ul class="profile-sex-list">
+                                <li class="active">Мужской</li>
+                                <li>Женский</li>
+                                <li>Другой</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--item-->
+                          <div class="profile-main__form-item">
+                            <label for="name">Страна</label>
+                            <div class="profile-main__input-wrapp">
+                              <div
+                                id="country-select"
+                                class="profile-sex-select"
+                              >
+                                Ваша страна<span></span>
+                              </div>
+                              <ul class="profile-sex-list country-select-list">
+                                <li class="active">Мужской</li>
+                                <li>Женский</li>
+                                <li>Другой</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!--item-->
+                          <button
+                            class="profile-main__form-submit"
+                            type="submit"
+                          >
+                            Сохранить
+                          </button>
                         </div>
-                        <!--item-->
-                        <button class="profile-main__form-submit" type="submit">
-                          Сохранить
-                        </button>
                       </form>
                     </div>
                   </div>

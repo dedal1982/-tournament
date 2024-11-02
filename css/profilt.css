@@ -87,15 +87,23 @@
 }
 .profile-main__form-general {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(auto, 1fr));
-  gap: 10px 21px;
+  display: none;
+  gap: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 14.63px;
   color: #fff;
   margin-top: 20px;
+}
+.profile-main__form-general.active {
+  display: flex;
+}
+.profile-main__form-inner {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .profile-main__form-item {
   width: 100%;
