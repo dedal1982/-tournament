@@ -397,3 +397,47 @@ input:focus::placeholder {
   bottom: -15px;
   right: 0;
 }
+/*---popup-exit---*/
+.popup-exit {
+  position: fixed;
+  inset: 0;
+  background: #000000c4;
+  z-index: 99999;
+  display: flex;
+  visibility: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+.popup-exit.active {
+  visibility: visible;
+}
+.popup-exit__wrapper {
+  width: 470px;
+  height: 364px;
+  border-radius: 10px;
+  position: relative;
+  margin: 144px auto auto auto;
+  background: url(../img/bonus-popup.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup-exit__img {
+  width: 33px;
+  height: 33px;
+  margin-top: 108px;
+}
+.btn-stay {
+  width: 153px;
+  height: 40px;
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
+  backdrop-filter: blur(10px);
+}
+.btn-exit {
+  width: 153px;
+  height: 40px;
+  background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
+  backdrop-filter: blur(10px);
+}
