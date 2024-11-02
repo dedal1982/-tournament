@@ -307,3 +307,13 @@ input:focus::placeholder {
   height: 18px;
   object-fit: cover;
 }
+.profile-email-error {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 9.75px;
+  color: #de0505cc;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+}
