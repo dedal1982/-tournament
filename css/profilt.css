@@ -596,20 +596,37 @@ input:focus::placeholder {
 .dreen-item {
   color: #5aba38;
 }
-.game-history-select {
+.history-select {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
 }
-.game-select {
+.item-select {
   display: flex;
+  gap: 5px;
 }
-.game-select span {
+.item-select p {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 14.63px;
   color: #fff;
+}
+.select-list {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #9897a8;
+  cursor: pointer;
+}
+.select-list span {
+  background: url(../icons/prof-arrow.svg);
+  width: 8.75px;
+  height: 5px;
 }
