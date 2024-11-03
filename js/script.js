@@ -886,3 +886,7 @@ if (btnExit) {
     alert("тут выход...");
   });
 }
+
+//показать / скрыть пароль
+const eyePassVisible = document.querySelector(".eye-pass");
+const eyePassHidden = document.querySelector(".eye-pass active");

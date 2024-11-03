@@ -451,3 +451,12 @@ input:focus::placeholder {
   right: 10px;
   z-index: 2;
 }
+/*---profile-statistics---*/
+.profile-statistics {
+  display: flex;
+  flex-direction: column;
+  background: #242347;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
