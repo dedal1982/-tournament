@@ -596,3 +596,20 @@ input:focus::placeholder {
 .dreen-item {
   color: #5aba38;
 }
+.game-history-select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.game-select {
+  display: flex;
+}
+.game-select span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #fff;
+}
