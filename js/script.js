@@ -887,6 +887,16 @@ if (btnExit) {
   });
 }
 
+//ползунок переключения
+const changeButton = document.querySelector(".statistics-change");
+const changeMark = document.querySelector(".change-mark");
+
+if (changeButton) {
+  changeButton.addEventListener("click", () => {
+    changeMark.classList.toggle("active");
+  });
+}
+
 //показать / скрыть пароль
 const eyePassVisible = document.querySelector(".eye-pass");
 const eyePassHidden = document.querySelector(".eye-pass active");

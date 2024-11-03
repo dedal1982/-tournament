@@ -460,3 +460,89 @@ input:focus::placeholder {
   padding: 20px;
   box-sizing: border-box;
 }
+.statistics-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.statistics-top h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.statistics-change {
+  width: 51px;
+  height: 18px;
+  border-radius: 46px;
+  background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
+  padding: 2px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.change-mark {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-left: auto;
+}
+.change-mark.active {
+  margin-left: 0;
+}
+.game-history-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  position: relative;
+  border-image-source: linear-gradient(180deg, #34326a 0%, #36328f 100%);
+}
+.game-history-top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
+}
+.game-history-top img {
+  width: 11px;
+  height: 11px;
+}
+.game-history {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.game-history-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #fff;
+  box-sizing: border-box;
+  position: relative;
+  background: transparent;
+}
+.game-history-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -17px;
+  height: 3px;
+  background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
+}
