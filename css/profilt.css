@@ -630,3 +630,6 @@ input:focus::placeholder {
   width: 8.75px;
   height: 5px;
 }
+.tr-prof {
+  color: #9897a8;
+}
