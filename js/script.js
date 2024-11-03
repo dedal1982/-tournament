@@ -890,10 +890,15 @@ if (btnExit) {
 //ползунок переключения
 const changeButton = document.querySelector(".statistics-change");
 const changeMark = document.querySelector(".change-mark");
+const gameHistory = document.querySelector(".game-history");
+const statisticsTop = document.querySelector(".statistics-top");
 
 if (changeButton) {
-  changeButton.addEventListener("click", () => {
+  changeButton.addEventListener("click", (ev) => {
+    ev.preventDefault();
     changeMark.classList.toggle("active");
+    gameHistory.classList.toggle("active");
+    statisticsTop.classList.toggle("active");
   });
 }
 

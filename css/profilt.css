@@ -466,6 +466,23 @@ input:focus::placeholder {
   align-items: center;
   justify-content: space-between;
 }
+.statistics-top.active {
+  border: 1px solid;
+  padding-bottom: 16px;
+  box-sizing: border-box;
+  position: relative;
+  border-image-source: linear-gradient(180deg, #34326a 0%, #36328f 100%);
+  margin-bottom: 20px;
+}
+.statistics-top.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(180deg, #34326a 0%, #36328f 100%);
+}
 .statistics-top h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -523,6 +540,12 @@ input:focus::placeholder {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  height: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+.game-history.active {
+  height: 0;
+  overflow: hidden;
 }
 .game-history-btn {
   display: flex;
@@ -632,7 +655,17 @@ input:focus::placeholder {
 }
 .tr-prof {
   color: #9897a8;
+  width: 134px;
 }
 .p-green {
   color: #5aba38 !important;
+}
+.p-weight {
+  background: transparent;
+}
+.p-weight p {
+  font-weight: 500;
+}
+.p-table tr {
+  margin-bottom: 15px;
 }
