@@ -546,3 +546,8 @@ input:focus::placeholder {
   height: 3px;
   background: linear-gradient(180deg, #6d63cf 0%, #5244df 100%);
 }
+.game-history-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  column-gap: 20px;
+}
