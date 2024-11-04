@@ -830,7 +830,7 @@ if (bonusPopupBtnUse) {
 }
 
 //выбор пола
-const profileSexSelect = document.getElementById("sex-select");
+const profileSexSelect = document.querySelector(".profile-sex-select");
 const profileSexList = document.querySelector(".profile-sex-list");
 const profileSexSpan = document.querySelector(".profile-sex-select span");
 const profileSexListSelect = document.querySelectorAll(".profile-sex-list li");
@@ -919,11 +919,3 @@ eyePassElements.forEach((eyePass) => {
 });
 
 //выбор страны
-const countrySelect = document.getElementById("country-select");
-const countrySelectList = document.querySelector(".country-select-list");
-
-if (countrySelect) {
-  countrySelect.addEventListener("click", () => {
-    countrySelectList.classList.toggle("active");
-  });
-}
