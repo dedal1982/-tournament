@@ -129,13 +129,13 @@
   position: absolute;
   top: 18px;
   right: 10px;
-  background: url(../icons/eye-closed.svg);
+  background: url(../icons/eye.svg);
   background-repeat: no-repeat;
   background-size: contain;
   cursor: pointer;
 }
 .eye-pass.active {
-  background: url(../icons/eye.svg);
+  background: url(../icons/eye-closed.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }

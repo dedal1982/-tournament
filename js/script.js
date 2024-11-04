@@ -903,5 +903,17 @@ if (changeButton) {
 }
 
 //показать / скрыть пароль
-const eyePassVisible = document.querySelector(".eye-pass");
-const eyePassHidden = document.querySelector(".eye-pass active");
+const eyePassElements = document.querySelectorAll(".eye-pass");
+
+eyePassElements.forEach((eyePass) => {
+  eyePass.addEventListener("click", () => {
+    const input = eyePass.previousElementSibling;
+    if (input.type === "password") {
+      input.type = "text";
+      eyePass.classList.add("active");
+    } else {
+      input.type = "password";
+      eyePass.classList.remove("active");
+    }
+  });
+});
