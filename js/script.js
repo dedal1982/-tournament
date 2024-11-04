@@ -829,7 +829,7 @@ if (bonusPopupBtnUse) {
   });
 }
 
-//выбор пола
+//выбор пола / страны
 const profileSexSelects = document.querySelectorAll(".profile-sex-select");
 const profileSexLists = document.querySelectorAll(".profile-sex-list");
 
@@ -839,6 +839,13 @@ profileSexSelects.forEach((profileSexSelect, index) => {
   const profileSexListSelect = profileSexList.querySelectorAll("li");
 
   profileSexSelect.addEventListener("click", () => {
+    profileSexLists.forEach((list) => {
+      if (list !== profileSexList) {
+        list.classList.remove("active");
+        list.previousElementSibling.classList.remove("active");
+      }
+    });
+
     profileSexList.classList.toggle("active");
     profileSexSpan.classList.toggle("active");
   });
