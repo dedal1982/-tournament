@@ -925,4 +925,11 @@ eyePassElements.forEach((eyePass) => {
   });
 });
 
-//выбор страны
+//редактирование логина
+const buttonPen = document.querySelector(".button-pen");
+
+if (buttonPen) {
+  buttonPen.addEventListener("click", () => {
+    document.querySelector(".profile-name-change").classList.toggle("active");
+  });
+}

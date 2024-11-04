@@ -179,6 +179,12 @@ input:focus::placeholder {
 .profile-main__input-wrapp {
   position: relative;
 }
+.profile-name-change {
+  pointer-events: none;
+}
+.profile-name-change.active {
+  pointer-events: initial;
+}
 .button-pen {
   width: 28px;
   height: 25px;
