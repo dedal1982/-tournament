@@ -29,6 +29,13 @@
   position: absolute;
   bottom: 0;
 }
+.profile-main__avatar-top {
+  width: 243px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left: 25px;
+}
 .profile-main__avatar-logo {
   width: 202px;
   height: 34px;
