@@ -830,19 +830,19 @@ if (bonusPopupBtnUse) {
 }
 
 //выбор пола
-const profileSexSelect = document.querySelector(".profile-sex-select");
-const profileSexList = document.querySelector(".profile-sex-list");
-const profileSexSpan = document.querySelector(".profile-sex-select span");
-const profileSexListSelect = document.querySelectorAll(".profile-sex-list li");
+const profileSexSelects = document.querySelectorAll(".profile-sex-select");
+const profileSexLists = document.querySelectorAll(".profile-sex-list");
 
-if (profileSexSelect) {
+profileSexSelects.forEach((profileSexSelect, index) => {
+  const profileSexList = profileSexLists[index];
+  const profileSexSpan = profileSexSelect.querySelector("span");
+  const profileSexListSelect = profileSexList.querySelectorAll("li");
+
   profileSexSelect.addEventListener("click", () => {
     profileSexList.classList.toggle("active");
     profileSexSpan.classList.toggle("active");
   });
-}
 
-if (profileSexListSelect) {
   profileSexListSelect.forEach((item) => {
     item.addEventListener("click", () => {
       profileSexListSelect.forEach((elem) => {
@@ -854,7 +854,7 @@ if (profileSexListSelect) {
       profileSexSelect.classList.add("active");
     });
   });
-}
+});
 
 //открытие / закрытие попапа выход
 const popupExitPage = document.querySelector(".popup-exit");
