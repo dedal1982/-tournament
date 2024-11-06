@@ -680,6 +680,29 @@ input:focus::placeholder {
   color: #9897a8;
   width: 134px;
 }
+.tr-prof span {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.tr-prof span::before {
+  position: absolute;
+  content: url(../icons/prof-arrow.svg);
+  width: 12px;
+  height: 5px;
+  right: 0;
+  bottom: 5px;
+  cursor: pointer;
+}
+.tr-prof span::after {
+  position: absolute;
+  content: url(../icons/prof-arrow-activ.svg);
+  width: 12px;
+  height: 5px;
+  right: 0;
+  top: -5px;
+  cursor: pointer;
+}
 .p-green {
   color: #5aba38 !important;
 }
